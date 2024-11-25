@@ -33,6 +33,6 @@ public class QuizController {
         }
     }
 
-    record Code(int value) {
+    public record Code(int value) {
     }
 }
