@@ -27,7 +27,7 @@ public class TestControllerTest {
 
     @DisplayName("getAllMembers: 아티클 조회에 성공한다")
     @Test
-    public void getAllMembers() throws Exception {
+     void getAllMembers() throws Exception {
 
         final String url = "/test";
 
@@ -40,5 +40,7 @@ public class TestControllerTest {
                 .andExpect(jsonPath("$[0].id").value(savedMember.getId()))
                 .andExpect(jsonPath("$[0].name").value(savedMember.getName()));
     }
+
+
 }
 
